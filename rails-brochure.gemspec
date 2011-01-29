@@ -9,8 +9,10 @@ Gem::Specification.new do |s|
   s.authors     = ["Dan Hixon"]
   s.email       = ["danhixon@gmail.com"]
   s.homepage    = "http://github.com/danhixon/rails-brochure"
-  s.summary     = %q{Rails Plugin for hosting static content files a-la-php with named routes.}
-  s.description = %q{Rails Plugin for hosting static content files a-la-php with named routes.  It is a lot like high voltage but you get named routes and '/pages' is not part of your routes.}
+  s.summary     = %q{Rails engine for brochure pages. Similar to High Voltage but with named routes.}
+  s.description = %q{Rails engine for brochure pages. Similar to High Voltage but with named routes.
+  Brochure pages are the semi-static pages like "home", "about us", "FAQ", "pricing", "contact us", etc.
+  Most of the designers I have worked with really appreciate the power and convenience this plugin provides. They are able to simply create erb files in folders like they are used to with static html or php and it just works.  No futzing with routes, controllers etc.}
  
   s.add_dependency('rails', '>= 3.0.0')
  
