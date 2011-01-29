@@ -1,0 +1,10 @@
+Description:
+    Explain the generator
+
+Example:
+    rails generate brochure
+
+    This will create:
+        app/views/home
+        app/views/home/index.html.erb
+        app/views/home/about.html.erb
