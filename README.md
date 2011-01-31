@@ -48,6 +48,14 @@ Once you have an index template you may want to add this route to your config/ro
 
     root :to => "home#index"
 
+Name Routes?
+--------
+
+Named routes are good because if you change a page name (about.html.erb to about_us.html.erb) without updating the links you'll get failing tests:
+
+  ActionView::TemplateError: undefined local variable or method `about_path'
+
+
 Override
 --------
 
