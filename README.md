@@ -14,12 +14,15 @@ Rails 3 required.
 
 Include in your Gemfile:
 
-    gem "rails-brochure", :git =>
-      "git://github.com/danhixon/rails-brochure.git"
+    gem "rails-brochure"
 
 Don't forget to install:
 
     $ bundle install
+
+You can install from the command line as well:
+
+    $ sudo gem install rails-brochure
 
 Usage
 -----
