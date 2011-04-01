@@ -1,6 +1,7 @@
 module Rails
   module Brochure
     class HomeContent
+      #TODO: replace with cattr_accessor:
       HOME_FOLDER_PATH = "app/views/home/"
       def self.newest
         HomeContent.files.map { |f| File.new(f) }.sort { |a,b| a.ctime <=> b.ctime }.map { |f| f.ctime }.last
