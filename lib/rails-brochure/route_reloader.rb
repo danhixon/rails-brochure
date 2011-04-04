@@ -5,7 +5,7 @@ module Rails
         @app = app
       end
       def call(env)
-        reload_routes if new_content?
+        reload_routes if new_content? && Rails.env != "Production"
         @app.call(env)
       end
       def reload_routes
