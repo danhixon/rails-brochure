@@ -5,7 +5,7 @@ module Rails
     class Engine < Rails::Engine
       initializer "brochure routes" do |app|
         app.middleware.use "Rails::Brochure::RouteReloader"  
-      end
+      end if Rails.env=="Development"
     end
   end
 end
