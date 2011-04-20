@@ -13,13 +13,15 @@ module Rails
       cattr_accessor :home_folder_path
 
       def self.newest
-        HomeContent.files.map { |f| File.new(f) }.sort { |a,b| a.ctime <=> b.ctime }.map { |f| f.ctime }.last
+        HomeContent.file_names.map { |f| File.new(f) }.sort { |a,b| a.ctime <=> b.ctime }.map { |f| f.ctime }.last
       end
-      def self.files
-        Dir.glob("#{home_folder_path}**/*.html.*")
+      def self.file_names
+        files = Dir.glob("#{home_folder_path}**/*.html.*")
+        files.delete_if { |f| f.end_with?(".orig") }
+        files
       end
       def self.templates
-        HomeContent.files.map do |f| 
+        HomeContent.file_names.map do |f| 
           f.gsub(/(#{home_folder_path}|.html.\w+)/,"")
         end
       end
