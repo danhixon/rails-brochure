@@ -18,7 +18,7 @@ module Rails
 
       def self.file_names
         files = Dir.glob("#{home_folder_path}**/*.{#{Mime::EXTENSION_LOOKUP.keys.join(",")}}.*")
-        puts files.inspect
+        #puts files.inspect
         files.delete_if { |f| f.end_with?(".orig") }
         files
       end
