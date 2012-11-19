@@ -25,7 +25,7 @@ module Rails
 
       def self.templates
         HomeContent.file_names.map do |f|
-          f.gsub(/(#{home_folder_path}|.(#{Mime::EXTENSION_LOOKUP.keys.join("|")})\.\w+)/,"")
+          f.gsub(/(#{home_folder_path}|\.(#{Mime::EXTENSION_LOOKUP.keys.join("|")})\.\w+)/,"")
         end
       end
 
