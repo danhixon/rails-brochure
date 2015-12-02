@@ -15,6 +15,7 @@ module Rails
         Rails.logger.info "ROUTES RELOADED by rails-brochure"
       end
       def new_content?
+        return true unless HomeContent.newest && last_route_change
         HomeContent.newest > last_route_change
       end
       def last_route_change
