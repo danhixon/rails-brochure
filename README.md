@@ -10,7 +10,7 @@ Most of the designers I have worked with really appreciate the power and conveni
 Installation
 ------------
 
-Rails 3 required.
+Rails 3+ required.
 
 Include in your Gemfile:
 
@@ -20,9 +20,6 @@ Don't forget to install:
 
     $ bundle install
 
-You can install from the command line as well:
-
-    $ sudo gem install rails-brochure
 
 Usage
 -----
@@ -56,7 +53,7 @@ Name Routes?
 
 Named routes are good because if you change a page name (about.html.erb to about_us.html.erb) without updating the links you'll get failing tests:
 
-  ActionView::TemplateError: undefined local variable or method `about_path'
+    ActionView::TemplateError: undefined local variable or method `about_path'
 
 
 Override
@@ -97,4 +94,4 @@ Enjoy!
 License
 -------
 
-Rails Brochure is Copyright © 2010-2011 Dan Hixon. It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file.
+Rails Brochure is Copyright © 2010-2019 Dan Hixon. It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file.
