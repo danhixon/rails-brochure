@@ -10,7 +10,7 @@ Most of the designers I have worked with really appreciate the power and conveni
 Installation
 ------------
 
-Rails 3+ required.
+Rails 5+ required.
 
 Include in your Gemfile:
 
@@ -19,6 +19,8 @@ Include in your Gemfile:
 Don't forget to install:
 
     $ bundle install
+
+    $ rails generate brochure home
 
 
 Usage

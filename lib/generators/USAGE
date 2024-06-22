@@ -1,8 +1,5 @@
-Description:
-    Explain the generator
-
 Example:
-    rails generate brochure
+    rails generate brochure home
 
     This will create:
         app/views/home

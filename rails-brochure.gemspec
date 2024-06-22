@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   Brochure pages are the semi-static pages like "home", "about us", "FAQ", "pricing", "contact us", etc.
   Most of the designers I have worked with really appreciate the power and convenience this plugin provides. They are able to simply create erb files in folders like they are used to with static html or php and it just works.  No futzing with routes, controllers etc.}
  
-  s.add_dependency('rails', '>= 3.0.0')
+  s.add_dependency('rails', '>= 5.0.0')
  
   s.rubyforge_project = "rails-brochure"
 
