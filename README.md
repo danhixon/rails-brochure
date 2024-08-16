@@ -96,4 +96,4 @@ Enjoy!
 License
 -------
 
-Rails Brochure is Copyright © 2010-2019 Dan Hixon. It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file.
+Rails Brochure is Copyright © 2010-2024 Dan Hixon. It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file.
